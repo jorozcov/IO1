@@ -90,6 +90,12 @@ h1, h2, h3 {
     background-image:url(../img/solucion.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 85rem;
+    height: 30rem;
     position: relative; 
+}
+
+@media (min-width: 768px) {
+    .solucion {
+        width: 40rem;
+    }
 }
