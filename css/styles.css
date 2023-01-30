@@ -1,0 +1,95 @@
+/*pseudo-selector elementos que no existen, guardar variables*/
+:root{
+    --blanco: #FFFFFF;
+    --negro: #212121;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    
+}
+
+/*Globales*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Tip boxmodel*/
+    scroll-snap-type: y mandatory;
+}
+
+
+*, *:before, *:after {/* * son todos los elementos, before y after seudoelementos no estan en el html pero si en css*/
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /* 1 rem = 10 p x*/
+    font-family: 'Krub', sans-serif; /*google fonts agregar link*/
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+
+.contenedor{
+    max-width: 110rem;
+    /*margin pa centrar*/
+    /*margin: 0 auto 0 auto; /* top right bottom left*/
+
+    margin: 0 auto; /* (top-bottom) (right-left)*/
+}
+
+
+.sombra {
+    -webkit-box-shadow: 0px 10px 18px 0px rgba(145,145,145,1);
+    -moz-box-shadow: 0px 10px 18px 0px rgba(145,145,145,1);
+    box-shadow: 0px 10px 18px 0px rgba(145,145,145,1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem; /* esquinas redondeadas */
+}
+
+/* Tipografia*/
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+/*Titulos*/
+.titulo span {
+    font-size: 2rem;
+}
+
+/* Utilidades */
+
+.w-sm-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+.problema {
+    background-image:url(../img/prob.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 25rem;
+    position: relative; 
+}
+
+.solucion {
+    background-image:url(../img/solucion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85rem;
+    position: relative; 
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preseleccion IO1</title>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Julián Orozco Vanegas <span>Ejercicio de preseleccion</span> </h1>
+    </header>
+    
+    <main class="contenedor sombra">
+        <h2>Problema</h2>
+
+        <div class="problema"></div>
+
+        <h2>Solucion</h2>
+
+        <div class="solucion"></div>
+
+        <h2>Comparación de resultados</h2>
+
+        <p class="comparacion">Practicamente con ambos solver se obtuvo el mismo resultado, si se redondea, el valor optimo es 225 con x = 35 y y = 15, no hay diferencia significativa para decidir cuál es el óptimo. Ambos solver están hechos para la solución de problemas convexos, es decir, problemas de optimización continuos; y este, al ser un problema de programación lineal, es perfectamente viable tanto con OSQP o con CVXOPT.</p>
+        <p class="comparacion">Si se mira desde un lado extremo, la solución con el solver OSQP es "mejor", ya que converge a la solución exacta sin necesidad de redondeos, pero a los ojos de un analista ambos solver dan la misma solución.</p>
+    </main>
+
+</body>
+</html>
